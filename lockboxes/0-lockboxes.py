@@ -13,6 +13,3 @@ def canUnlockAll(boxes):
             unlocked .add(key) # Unlock the box
             keys.extend(boxes[key]) # Add keys found in this newly unlocked box
     return len(unlocked) == n
-
-
-   
