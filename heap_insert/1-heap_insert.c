@@ -4,9 +4,9 @@
 /**
  * heapify_up - Ensures Max Heap property is maintained after insertion
  * @node: The newly inserted node
+ * 
  * Return: The pointer to the new position of the inserted node
  */
-
 heap_t *heapify_up(heap_t *node)
 {
 	heap_t *parent;
@@ -31,9 +31,9 @@ heap_t *heapify_up(heap_t *node)
 /**
  * find_insertion_point - Finds the insertion point for the new node
  * @root: The root of the heap
+ * 
  * Return: A pointer to the node where the new node should be inserted
  */
-
 heap_t *find_insertion_point(heap_t *root)
 {
 	heap_t *queue[1024];
@@ -64,9 +64,9 @@ heap_t *find_insertion_point(heap_t *root)
  * heap_insert - Inserts a value into a Max Binary Heap
  * @root: Double pointer to the root node of the heap
  * @value: The value to store in the new node
+ * 
  * Return: Pointer to the inserted node or NULL on failure
  */
-
 heap_t *heap_insert(heap_t **root, int value)
 {
 	heap_t *new_node, *insert_point;
