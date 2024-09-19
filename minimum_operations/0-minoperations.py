@@ -8,7 +8,7 @@ def minOperations(n):
     if n <= 1:
         return 0
 
-    i = 0  
+    i = 0
     x = 2  # Start dividing n by the smallest possible prime factors
     
     while n > 1:
@@ -16,5 +16,5 @@ def minOperations(n):
             i += x
             n //= x
         x += 1
-    
+
     return i
