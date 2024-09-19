@@ -2,13 +2,8 @@
 """Module which contains function"""
 
 def minOperations(n):
-    """Calculate the minimum number of operations needed to get exactly n 'H' characters
-         Args:
-            n: repetitions of H
-
-        Returns:
-            number of operations
-    """
+    """Calculate the minimum number of 
+        operations needed to get exactly n 'H' characters"""
     if n <= 1:
         return 0
 
@@ -20,5 +15,6 @@ def minOperations(n):
             i += x
             n //= x
         x += 1
+        
 
     return i
