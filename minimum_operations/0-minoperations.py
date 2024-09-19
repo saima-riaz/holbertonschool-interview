@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 
 def minOperations(n):
-    """Calculate the minimum number of operations needed to get exactly n 'H' characters"""
+    """Calculate the minimum number of operations needed to get exactly n 'H' characters
+         Args:
+            n: repetitions of H
+
+        Returns:
+            number of operations
+    """
     if n <= 1:
         return 0
 
