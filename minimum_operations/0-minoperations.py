@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module which contains function"""
 
 def minOperations(n):
     """Calculate the minimum number of operations needed to get exactly n 'H' characters
