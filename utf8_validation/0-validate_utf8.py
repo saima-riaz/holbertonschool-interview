@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 Module to validate UTF-8 encoding.
 This module provides a function, 
