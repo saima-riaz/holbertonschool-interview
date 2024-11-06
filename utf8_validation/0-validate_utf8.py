@@ -2,10 +2,11 @@
 
 """
 Module to validate UTF-8 encoding.
-This module provides a function, 
+This module provides a function,
 validUTF8` that checks if a given dataset
 represents valid UTF-8 encoding.
 """
+
 
 def validUTF8(data):
     num_bytes = 0
