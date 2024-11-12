@@ -27,8 +27,8 @@ You are not allowed to use global variables
 - All your header files should be include guarded
 
 ### Tasks
-- - [0-menger.c](https://github.com/saima-riaz/holbertonschool-interview/blob/main/menger/0-menger.c)
-[menger.h](https://github.com/saima-riaz/holbertonschool-interview/blob/main/menger/menger.h)
+- [0-menger.c](https://github.com/saima-riaz/holbertonschool-interview/blob/main/menger/0-menger.c)
+- [menger.h](https://github.com/saima-riaz/holbertonschool-interview/blob/main/menger/menger.h)
 
 ### Developer : [Saima RIAZ](https://github.com/saima-riaz)
 
