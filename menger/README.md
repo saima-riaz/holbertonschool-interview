@@ -4,15 +4,13 @@
 ## Description
 This project implements a 2D version of the Menger Sponge, a fractal with a distinctive recursive structure that divides space into a grid and removes specific portions to create intricate patterns. The Menger Sponge illustrates concepts of fractal geometry, recursion, and self-similarity, making it both a visually intriguing and mathematically rich structure.
 
----
+
 ### How It Works
 - A 2D Menger Sponge is a square grid, where each level of recursion divides the grid into smaller sections. At each level:
 
 - The square is divided into a 3x3 grid.
 - The center cell in each grid is removed, leaving a hole.
 - This process is repeated for each of the remaining smaller squares to the desired depth, forming a fractal pattern.
-
----
 
 ### Requirements General For Project
 
@@ -28,13 +26,12 @@ You are not allowed to use global variables
 - Don’t forget to push your header file
 - All your header files should be include guarded
 
----
 ### Tasks
-[0-menger.c]()
+[0-menger.c](https://github.com/saima-riaz/holbertonschool-interview/blob/main/menger/0-menger.c)
+[menger.h](https://github.com/saima-riaz/holbertonschool-interview/blob/main/menger/menger.h)
 
-### Developer : Saima RIAZ
+### Developer : [Saima RIAZ](https://github.com/saima-riaz)
 
----
 
 ### 📞 Contact
 
