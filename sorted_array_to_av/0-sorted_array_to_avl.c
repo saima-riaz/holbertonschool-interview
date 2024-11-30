@@ -3,7 +3,8 @@
 #include "binary_trees.h"
 
 /**
- * add_node - Recursively creates an AVL tree node from a sorted array
+ * add_node - 
+ Recursively creates an AVL tree node from a sorted array
  *
  * @array: Pointer to the portion of the array to be used
  * @size: Size of the current portion of the array
