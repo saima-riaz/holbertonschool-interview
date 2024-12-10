@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/opt/homebrew/bin/node
 
 const axios = require('axios');  // Use axios instead of request
 
@@ -18,16 +18,25 @@ axios.get(url)
     const movieData = response.data;
     const characters = movieData.characters;
 
-    // Iterate over the character URLs and fetch their names
-    characters.forEach((characterUrl) => {
-      axios.get(characterUrl)
-        .then((response) => {
-          console.log(response.data.name);  // Print the character's name
-        })
-        .catch((error) => {
-          console.error('Error fetching character data:', error);
-        });
+    // Create an array of promises for each character
+    const characterPromises = characters.map(characterUrl => {
+      return axios.get(characterUrl)
+        .then(response => response.data.name)  // Extract character name from response
+        .catch(error => console.error('Error fetching character data:', error));
     });
+
+    // Wait for all promises to resolve and print character names in order
+    Promise.all(characterPromises)
+      .then(characterNames => {
+        characterNames.forEach(name => {
+          if (name) {
+            console.log(name);  // Print the character's name
+          }
+        });
+      })
+      .catch((error) => {
+        console.error('Error fetching character data:', error);
+      });
   })
   .catch((error) => {
     console.error('Error fetching movie data:', error);
