@@ -1,8 +1,4 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
-
-int is_digit(char *s);
-void *_calloc(unsigned int nmemb, unsigned int size);
-char *multiply(char *num1, char *num2);
-
+#ifndef _FUNCTIONS_H
+#define _FUNCTIONS_H
+int _putchar(char c);
 #endif
