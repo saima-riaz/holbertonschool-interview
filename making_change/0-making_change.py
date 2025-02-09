@@ -8,14 +8,12 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
     
-    coins.sort(reverse=True)  # Sort coins in descending order
-    num_coins = 0
+    coins.sort(reverse=True)  # Start with the largest coin
+    count = 0
     
     for coin in coins:
-        if total == 0:
-            break
-        count = total // coin  # Get the max number of this coin we can use
-        num_coins += count
-        total -= count * coin  # Reduce the total by the used coins
+        while total >= coin:
+            total -= coin
+            count += 1
     
-    return num_coins if total == 0 else -1
+    return count if total == 0 else -1
